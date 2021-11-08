@@ -1,0 +1,212 @@
+@mixin container2{
+    max-width: 1440px;
+    margin:0 auto;
+}
+// @mixin &:hover
+// {
+//     background-color:  #699DEE;
+// }
+
+@mixin banner{
+    width: 100%;
+}
+@mixin h2{
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 64px;
+    }       
+@mixin card{
+            width: 350px;
+            height: 250px;
+            border: 8px;
+            padding: 40px,32px,40px,32px;
+            box-shadow: $box-shadow;  
+            margin-left: 20px; 
+            .servies-1_text{
+                width: 288px;
+                height: 100px;
+                margin: 40px 30px 110px ;
+                
+            h3{
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 600px;
+                color: $heading-color;
+                margin-left: -49px;
+              
+            }
+            p{
+                margin-top: 8px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #969BAB;
+                text-align: justify;
+                align-content: center;
+            }
+        }
+            .img_vector_1{
+               display: flex;
+               align-items: center;
+               width: 105px;
+               height: 30px;
+               margin: -58px 213px 40px 32px;
+                img{
+                    width:73px;
+                    height:20px;
+                    left: 32px;
+                    top: 180px;
+                }
+                .vector_1{  
+                    height: 14.000001907348633px;
+                    width: 22.000242233276367px;
+                    left: 1px;
+                    top: 5px;
+                    border-radius: 0px;
+                }
+            }
+            
+}
+@mixin clients_feedback
+{
+    display: flex;
+    flex-wrap: wrap;
+    @include container2;
+    height: 610px;
+    margin-left: $margin-left;
+    .clients_feedback_1{
+    background: #f7f1f1;
+    border-radius: 10px;
+    width: 540px;
+    height: 220px;
+    border-radius: 10px;
+    padding: 30px; 
+    }
+    .clients_feedback_2{
+        background: #f7f1f1;
+        border-radius: 10px;
+        width: 540px;
+        height: 220px;
+        border-radius: 10px;
+        padding: 30px; 
+        }
+}
+@mixin person{
+    h5{
+        width: 110px;
+        height: 28px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: $bg-color;
+    }
+    h6{
+        width: 192px;
+        height: 24px;
+        top:28px;
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FAFAFA;
+    }
+}
+@mixin housetraining{
+    width: 330px;
+    height: 340px;
+    border-radius: 8px;
+    padding:10px;
+    box-shadow:0px 10px 25px 3px rgba(41, 41, 42, 0.1);
+    img{
+        width: 38.11px;
+        height: 33.44px;
+        margin-left: 33.33px;
+        margin-top: 30.89px;
+
+    }   
+    .training_img{  
+    width: 124px;
+    height: 35px;
+    left: 224px;
+    top: 16px;
+    }
+    h6{
+        width: 157px;
+        height: 30px;
+        left: 24px;
+        top: 92px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;   
+    }
+    p{
+        height: 121px;
+        width: 292px;
+        left: 24px;
+        top: 130px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #969BAB;
+    }
+
+    hr{
+        height: 0px;
+        width:330px;
+        left: 0px;
+        margin-top: 32px;
+        border: 1px solid #D7D7D7;
+    }
+    .social{
+        left: 8.33%;
+        right: 12.5%;
+        top: 12.5%;
+        bottom: 12.5%;
+    }
+    .shair{
+        margin-left: -38px;
+        // margin-top: -134px;
+        margin-bottom: 7px;
+    }
+    .social_btn
+    {
+        height: 44px;
+        width: 179px;
+        left: 145px;
+        top: 295px;
+        border-radius: 8px;
+        padding: 10px, 16px, 10px, 16px;
+    }
+    h6{
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+}
+
+@mixin img_vector{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 105px;
+    left: 32px;
+    top: 212px;
+    border-radius: 0px;
+img{
+    height: 18px;
+    width: 96px; 
+}
+.vector
+{
+    height: 14px;
+    width: 22px;
+    left: 2px;
+    top: 5px;
+}
+}
